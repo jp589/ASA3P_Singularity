@@ -4,13 +4,13 @@ This repository contains the files required to utilize the ASA3P pipeline as a s
 The main ASA3P pipeline can be found at: [https://github.com/oschwengers/asap/tree/master].
 
 The updated files are as follows:
-  1. A recipe to build the singularity image based on the ASA3P dockerfile.
-  2. The scaffold .fasta file for _Listeria monocytogenes_ SRR3330409, produced by the ASA3P pipeline in the scaffolding step.
+  1. A recipe to build the singularity image based on the ASA3P dockerfile. `ASAP_Singularity_recipe`
+  2. The scaffold .fasta file for _Listeria monocytogenes_ SRR3330409, produced by the ASA3P pipeline in the scaffolding step. `Listeria_monocytogenes_SRR3330409.fasta`
       * This is required as input during the singularity build step to initialize the CARD database properly for the rgi conda enviornment.
-  4. An updated version of the PROKKA perl script to ignore the version check for BARRNAP. It is assumed that the BARRNAP version (here 0.8) will be compatible with PROKKA 1.12.
-  6. An updated bash script to initialize the ASA3P pipeline using the `singularity run` command.
-  7. An updated groovy script for the ABR step to utilize the `rgi` conda environment instead of initializing a secondary singularity container.
-  8. An updated `aro.json` file (version 3.2.9) downloaded from the Comprehensive Antibiotic Resistance Database at [https://card.mcmaster.ca/download].
+  4. An updated version of the PROKKA perl script to ignore the version check for BARRNAP. It is assumed that the BARRNAP version (here 0.8) will be compatible with PROKKA 1.12. `prokka`
+  6. An updated bash script to initialize the ASA3P pipeline using the `singularity run` command. `asap-singularity.sh`
+  7. An updated groovy script for the ABR step to utilize the `rgi` conda environment instead of initializing a secondary singularity container. `asap-abr.groovy`
+  8. An updated `aro.json` file (version 3.2.9) downloaded from the Comprehensive Antibiotic Resistance Database at [https://card.mcmaster.ca/download]. `aro.json`
 
 In order to recreate the singularity image please follow the steps below:
   1. Choose a location for the ASA3P pipeline, make a dedicated ASA3P directory and enter it.
