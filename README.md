@@ -31,9 +31,10 @@ In order to recreate the singularity image please follow the steps below:
     $ unzip -j master.zip
     $ rm master.zip
 ```
-  4. Move files to their respective locations:
+  4. Ensure appropriate permissions and move files to their respective locations:
      * `ASAP_Singularity_recipe` and `Listeria_monocytogenes_SRR3330409.fasta` should remain in the current directory.
 ```
+    $ chmod 777 prokka asap-singularity.sh asap-abr.groovy aro.json ASAP_Singularity_recipe Listeria_monocytogenes_SRR3330409.fasta
     $ mv prokka ./asap/share/prokka/bin/prokka
     $ mv asap-singularity.sh ./asap/
     $ mv asap-abr.groovy ./asap/scripts/
