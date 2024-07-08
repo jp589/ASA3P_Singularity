@@ -1,7 +1,7 @@
 # ASA3P_Singularity
 This repository contains the files required to utilize the ASA3P pipeline as a singularity image without need for root permissions.
-
 The main ASA3P pipeline can be found at: [https://github.com/oschwengers/asap/].
+To be clear, I am not the author or maintainer of the ASA3P pipeline. Rather, I have updated files to provide a way for the pipeline to be utilized via Singularity.
 
 The updated files are as follows:
   1. A recipe to build the singularity image based on the ASA3P dockerfile. `ASAP_Singularity_recipe`
