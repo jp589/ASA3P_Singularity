@@ -1,7 +1,7 @@
 # ASA3P_Singularity
 This repository contains the files required to utilize the ASA3P pipeline as a singularity image without need for root permissions.
 
-The main ASA3P pipeline can be found at: [https://github.com/oschwengers/asap/tree/master].
+The main ASA3P pipeline can be found at: [https://github.com/oschwengers/asap/].
 
 The updated files are as follows:
   1. A recipe to build the singularity image based on the ASA3P dockerfile. `ASAP_Singularity_recipe`
@@ -54,7 +54,7 @@ In order to recreate the singularity image please follow the steps below:
     $ rm example-lmonocytogenes-4.tar.gz
 ```
   6. Run the pipeline:
-      * All options, parameters, and required input files remain the same as detailed on the main github page [https://github.com/oschwengers/asap/tree/master].
+      * All options, parameters, and required input files remain the same as detailed on the main github page [https://github.com/oschwengers/asap/].
 ```
     $ ./asap/asap-singularity.sh -p example-lmonocytogenes-4/ -s /tmp
 ```
